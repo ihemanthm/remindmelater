@@ -30,6 +30,8 @@ remindmelater/
 ├── reminders/          # Django app containing models, views, serializers, urls
 ├── remindmelater/      # Project configuration
 ├── db.sqlite3          # SQLite database file
+├── .gitignore           # Git ignore file
+├── requirements.txt    # Python dependencies
 ├── manage.py
 ├── requirements.txt    # (optional) dependencies
 └── README.md
@@ -66,7 +68,7 @@ venv\Scripts\activate          # Windows
 3. **Install dependencies**
 
 ```bash
-pip install django djangorestframework django-cors-headers
+pip install -r requirements.txt
 ```
 
 4. **Apply migrations**
@@ -109,6 +111,7 @@ Response: `201 Created` with the saved reminder object.
 
 - **GET** `/api/reminders/`  
   Get all reminders by sending a GET request.
+  
 Response: `200 OK` with a list of reminders.
 
 
